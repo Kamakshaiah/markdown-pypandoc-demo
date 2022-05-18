@@ -1,4 +1,11 @@
-# Table of contents
+<h1 style="text-align: center;">MARKDOWN Tutorial</h1>
+
+<center>by</center>
+<center><img src="https://avatars.githubusercontent.com/u/37700934?s=400&u=6e0c4738edf8996e2d4ca7b0f1f66f8b2f557c96&v=4" width=150 height=150></center>
+<center>Auther</center>
+<center>Dr. M. Kamakshaiah</center>
+
+## Table of contents
 1. [Title](#Title)
 2. [External links](#External links)
 3. [Images](#Images)
@@ -16,7 +23,7 @@
 11. [Horizontal Rules](#Horizontal Rules)
 12. [Formatting Links](#Formatting Links)
 13. [HTML code in markdown](#HTML code in markdown)
-
+14. [Text alignment][#Text alignment]
 
 ## This is Title (level 2) <a name="Title"></a>
 
@@ -270,10 +277,67 @@ To use HTML, place the tags in the text of your Markdown-formatted file.
 	This **word** is bold. This <em>word</em> is italic.
 	The rendered output looks like this:
 
-This **word** is bold. This word is <em>italic<em>.
+This **word** is bold. Also `<em>italic<em>` can be done to make itelicised words. 
+
+
+### Text alignment <a name="Text alignment"></a>
+
+We can do `<center> <h1>heading 1</h1> </center>` for aligning text. This statement produces 
+
+	`<center> <h1>heading 1</h1> </center>`
+
+It is rather easy to align text using HTML code. For instace 
+
+Code 
+	`<div style="text-align: center;">
+	![alt text](https://avatars.githubusercontent.com/u/37700934?s=400&u=6e0c4738edf8996e2d4ca7b0f1f66f8b2f557c96&v=4)
+	</div>`
+
+Result 
+
+<div style="text-align: center;"> ![alt text](https://avatars.githubusercontent.com/u/37700934?s=150&u=6e0c4738edf8996e2d4ca7b0f1f66f8b2f557c96&v=4) </div>
+
+or we can also do as below 
+
+	`<img style="display: block; margin-left: auto; margin-right: auto; width: 30%;"
+		src="https://markdown.land/wp-content/uploads/2021/06/markdown-512px.png" 
+		alt="Our logo">
+	</img>`
+
+this will produce 
+
+<img style="display: block; margin-left: auto; margin-right: auto; width: 30%;"
+	src="https://markdown.land/wp-content/uploads/2021/06/markdown-512px.png" 
+	alt="Our logo">
+</img>
+
+#### Title centering 
+
+We can use `<h1></h1>` or `<center></center>` tags for centering titles. For instance 
+
+	`<h1 style="text-align: center;">Test</h1>
+	<center>Test</center>`
+
+this will produce below centered line 
+
+<h1 style="text-align: center;">Centered text with h1 tag</h1>
+<center>Centered text with `cetnter` tag</center>
+
 
 ### References
+
 [1]: this links/cites to 1 in the text
 [2]: www.wikipedia.org
 [wiki]: https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png 
-Refere to <https://www.markdownguide.org/basic-syntax/> for more inforamtion
+
+[3] Visit <https://www.markdownguide.org/> for full documentation on markdown.
+
+[4] Refer to <https://www.markdownguide.org/basic-syntax/> for markdown documentation. 
+
+[5] Visit <https://pandoc.org/> for `pandoc` home. 
+
+[6] Refer to <https://pypi.org/project/pypandoc/> for `pypandoc` documentation. 
+
+[7] Refer to <https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents> for information on craeting table of contents. 
+
+[8] Refer to <https://markdown.land/markdown-center> for making alignments in the document. 

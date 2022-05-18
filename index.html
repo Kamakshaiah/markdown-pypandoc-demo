@@ -159,7 +159,22 @@
   <![endif]-->
 </head>
 <body>
-<h1 id="table-of-contents">Table of contents</h1>
+<h1 style="text-align: center;">
+MARKDOWN Tutorial
+</h1>
+<center>
+by
+</center>
+<center>
+<img src="https://avatars.githubusercontent.com/u/37700934?s=400&u=6e0c4738edf8996e2d4ca7b0f1f66f8b2f557c96&v=4" width=150 height=150>
+</center>
+<center>
+Auther
+</center>
+<center>
+Dr. M. Kamakshaiah
+</center>
+<h2 id="table-of-contents">Table of contents</h2>
 <ol type="1">
 <li><a href="#Title">Title</a></li>
 <li><a href="#External%20links">External links</a></li>
@@ -183,6 +198,7 @@
 <li><a href="#Formatting%20Links">Formatting Links</a></li>
 <li><a href="#HTML%20code%20in%20markdown">HTML code in
 markdown</a></li>
+<li>[Text alignment][#Text alignment]</li>
 </ol>
 <h2 id="this-is-title-level-2">This is Title (level 2)
 <a name="Title"></a></h2>
@@ -561,10 +577,67 @@ the width of an image.</p>
 file.</p>
 <pre><code>This **word** is bold. This &lt;em&gt;word&lt;/em&gt; is italic.
 The rendered output looks like this:</code></pre>
-<p>This <strong>word</strong> is bold. This word is <em>italic<em>.</p>
+<p>This <strong>word</strong> is bold. Also
+<code>&lt;em&gt;italic&lt;em&gt;</code> can be done to make itelicised
+words.</p>
+<h3 id="text-alignment">Text alignment
+<a name="Text alignment"></a></h3>
+<p>We can do
+<code>&lt;center&gt; &lt;h1&gt;heading 1&lt;/h1&gt; &lt;/center&gt;</code>
+for aligning text. This statement produces</p>
+<pre><code>`&lt;center&gt; &lt;h1&gt;heading 1&lt;/h1&gt; &lt;/center&gt;`</code></pre>
+<p>It is rather easy to align text using HTML code. For instace</p>
+<p>Code
+<code>&lt;div style="text-align: center;"&gt;     ![alt text](https://avatars.githubusercontent.com/u/37700934?s=400&amp;u=6e0c4738edf8996e2d4ca7b0f1f66f8b2f557c96&amp;v=4)     &lt;/div&gt;</code></p>
+<p>Result</p>
+<div style="text-align: center;">
+<figure>
+<img
+src="https://avatars.githubusercontent.com/u/37700934?s=150&amp;u=6e0c4738edf8996e2d4ca7b0f1f66f8b2f557c96&amp;v=4"
+alt="alt text" />
+<figcaption aria-hidden="true">alt text</figcaption>
+</figure>
+</div>
+<p>or we can also do as below</p>
+<pre><code>`&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto; width: 30%;&quot;
+    src=&quot;https://markdown.land/wp-content/uploads/2021/06/markdown-512px.png&quot; 
+    alt=&quot;Our logo&quot;&gt;
+&lt;/img&gt;`</code></pre>
+<p>this will produce</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto; width: 30%;"
+    src="https://markdown.land/wp-content/uploads/2021/06/markdown-512px.png" 
+    alt="Our logo"> </img></p>
+<h4 id="title-centering">Title centering</h4>
+<p>We can use <code>&lt;h1&gt;&lt;/h1&gt;</code> or
+<code>&lt;center&gt;&lt;/center&gt;</code> tags for centering titles.
+For instance</p>
+<pre><code>`&lt;h1 style=&quot;text-align: center;&quot;&gt;Test&lt;/h1&gt;
+&lt;center&gt;Test&lt;/center&gt;`</code></pre>
+<p>this will produce below centered line</p>
+<h1 style="text-align: center;">
+Centered text with h1 tag
+</h1>
+<center>
+Centered text with <code>cetnter</code> tag
+</center>
 <h3 id="references">References</h3>
-<p>Refere to <a href="https://www.markdownguide.org/basic-syntax/"
-class="uri">https://www.markdownguide.org/basic-syntax/</a> for more
-inforamtion</p>
+<p>[3] Visit <a href="https://www.markdownguide.org/"
+class="uri">https://www.markdownguide.org/</a> for full documentation on
+markdown.</p>
+<p>[4] Refer to <a href="https://www.markdownguide.org/basic-syntax/"
+class="uri">https://www.markdownguide.org/basic-syntax/</a> for markdown
+documentation.</p>
+<p>[5] Visit <a href="https://pandoc.org/"
+class="uri">https://pandoc.org/</a> for <code>pandoc</code> home.</p>
+<p>[6] Refer to <a href="https://pypi.org/project/pypandoc/"
+class="uri">https://pypi.org/project/pypandoc/</a> for
+<code>pypandoc</code> documentation.</p>
+<p>[7] Refer to <a
+href="https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents"
+class="uri">https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents</a>
+for information on craeting table of contents.</p>
+<p>[8] Refer to <a href="https://markdown.land/markdown-center"
+class="uri">https://markdown.land/markdown-center</a> for making
+alignments in the document.</p>
 </body>
 </html>
