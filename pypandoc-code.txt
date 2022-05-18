@@ -1,0 +1,10 @@
+# md to html (works well) 
+
+os.chdir('D:\\Miscel\\markdown-demo')
+os.listdir()
+pypandoc.convert_file('markdowndemo.md', 'html', outputfile='index.html')
+
+# docx to md to html (not working) 
+
+pypandoc.convert_file('../Document.docx', 'md', outputfile='doc.md')
+pypandoc.convert_file('doc.md', 'html', outputfile='doc.html') 
