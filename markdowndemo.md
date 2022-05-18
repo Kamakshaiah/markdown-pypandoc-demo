@@ -23,7 +23,7 @@
 11. [Horizontal Rules](#Horizontal Rules)
 12. [Formatting Links](#Formatting Links)
 13. [HTML code in markdown](#HTML code in markdown)
-14. [Text alignment][#Text alignment]
+14. [Text alignment](#Text alignment)
 
 ## This is Title (level 2) <a name="Title"></a>
 
@@ -103,14 +103,14 @@ Occasionally, you might find the need to make a list with more depth, or, to nes
 the same. All you have to do is to remember to indent each asterisk one space more than the preceding item.
 
 * this is line one in unordered list 
- * this line one indented by one space makes this line nested under line one. 
+	* this line one indented by one space makes this line nested under line one. 
 * this is line two in unordered list 
- * this line one indented by one space makes this line nested under line two.
- * this line two indented by one space makes this line nested under line two.
+	* this line one indented by one space makes this line nested under line two.
+	* this line two indented by one space makes this line nested under line two.
 * this is line three in unordered list 
- * this line one indented by one space makes this line nested under line three.
- * this line two indented by one space makes this line nested under line three.
- * this line three indented by one space makes this line nested under line three.
+	* this line one indented by one space makes this line nested under line three.
+	* this line two indented by one space makes this line nested under line three.
+	* this line three indented by one space makes this line nested under line three.
 
 #### Mixed lists <a name="Mixed lists"></a> 
 
