@@ -2,7 +2,7 @@
 
 <center>by</center>
 <center><img src="https://avatars.githubusercontent.com/u/37700934?s=400&u=6e0c4738edf8996e2d4ca7b0f1f66f8b2f557c96&v=4" width=150 height=150></center>
-<center>Auther</center>
+<center>Author</center>
 <center>Dr. M. Kamakshaiah</center>
 
 ## Table of contents
