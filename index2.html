@@ -1,0 +1,480 @@
+<h1 style="text-align: center;">
+MARKDOWN Tutorial
+</h1>
+<center>
+by
+</center>
+<center>
+<img src="https://avatars.githubusercontent.com/u/37700934?s=400&u=6e0c4738edf8996e2d4ca7b0f1f66f8b2f557c96&v=4" width=150 height=150>
+</center>
+<center>
+Author
+</center>
+<center>
+Dr. M. Kamakshaiah
+</center>
+<h2 id="table-of-contents">Table of contents</h2>
+<ol type="1">
+<li><a href="#Title">Title</a></li>
+<li><a href="#External%20links">External links</a></li>
+<li><a href="#Images">Images</a></li>
+<li><a href="#Quotes">Quotes</a></li>
+<li><a href="#Lists">Lists</a>
+<ol type="1">
+<li><a href="#Ordered%20list">Ordered list</a></li>
+<li><a href="#Nested%20lists">Nested lists</a></li>
+<li><a href="#Mixed%20lists">Mixed lists</a></li>
+</ol></li>
+<li><a href="#Line%20breaks">Line breaks</a></li>
+<li><a href="#Tables">Tables</a></li>
+<li><a href="#Math%20inside%20RMarkdown">Math inside RMarkdown</a></li>
+<li><a href="#URLs%20and%20Emails">URLs and Emails</a></li>
+<li><a href="#Code%20Blocks">Code Blocks</a>
+<ol type="1">
+<li><a href="#Plain%20Code">Plain Code</a></li>
+</ol></li>
+<li><a href="#Horizontal%20Rules">Horizontal Rules</a></li>
+<li><a href="#Formatting%20Links">Formatting Links</a></li>
+<li><a href="#HTML%20code%20in%20markdown">HTML code in
+markdown</a></li>
+<li>[Text alignment][#Text alignment]</li>
+</ol>
+<h2 id="this-is-title-level-2">This is Title (level 2)
+<a name="Title"></a></h2>
+<p>Titles are created either using <code>#</code>. For instace at level
+1 it can be <code>#</code>, level 2 <code>##</code> and so on…
+<code>##</code> make the sub-title just as below.</p>
+<pre><code>## This is subheading/ heading two (at level 3) </code></pre>
+<blockquote>
+<h2 id="this-is-subheading-heading-two-at-level-3">This is subheading/
+heading two (at level 3)</h2>
+</blockquote>
+<p><strong><em>Lorem Ipsum</em></strong> is simply dummy text of the
+printing and typesetting industry. Lorem Ipsum has been the industry’s
+standard dummy text ever since the 1500s, when an unknown printer took a
+galley of type and scrambled it to make a type specimen book. It has
+survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. It was popularised in the
+1960s with the release of Letraset sheets containing Lorem Ipsum
+passages, and more recently with desktop publishing software like Aldus
+PageMaker including versions of Lorem Ipsum.</p>
+<h3 id="external-links">External links
+<a name="External links"></a></h3>
+<p><a href="www.wikipedia.org">Visit wikipedia</a> This is a link that
+redirects to Wikipedia.</p>
+<h3 id="internal-links">Internal links <a name="Inernal links"></a></h3>
+<p>This statement shows as how to provide a <a
+href="this%20links/cites%20to%201%20in%20the%20text">reference link</a>
+and a reference to <a href="www.wikipedia.org">external url</a>.</p>
+<h3 id="images">images <a name="Images"></a></h3>
+<p>The below url spots to wikipedia logo <img
+src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png"
+alt="Wikipedia" /></p>
+<p>This is reference image link. This links to <a
+href="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png">wikipedia</a>
+image.</p>
+<h3 id="quotes">Quotes <a name="Quotes"></a></h3>
+<p>The following is a single line quote</p>
+<blockquote>
+<p>this is a quote</p>
+</blockquote>
+<p>The following multiline <em>blockquote</em>.</p>
+<blockquote>
+<p><strong><em>Lorem Ipsum</em></strong> is simply dummy text of the
+printing and typesetting industry. Lorem Ipsum has been the industry’s
+standard dummy text ever since the 1500s, when an unknown printer took a
+galley of type and scrambled it to make a type specimen book. It has
+survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. It was popularised in the
+1960s with the release of Letraset sheets containing Lorem Ipsum
+passages, and more recently with desktop publishing software like Aldus
+PageMaker including versions of Lorem Ipsum.</p>
+<p><strong><em>Lorem Ipsum</em></strong> is simply dummy text of the
+printing and typesetting industry. Lorem Ipsum has been the industry’s
+standard dummy text ever since the 1500s, when an unknown printer took a
+galley of type and scrambled it to make a type specimen book. It has
+survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. It was popularised in the
+1960s with the release of Letraset sheets containing Lorem Ipsum
+passages, and more recently with desktop publishing software like Aldus
+PageMaker including versions of Lorem Ipsum.</p>
+</blockquote>
+<p><strong><em>Lorem Ipsum</em></strong> is simply dummy text of the
+printing and typesetting industry. Lorem Ipsum has been the industry’s
+standard dummy text ever since the 1500s, when an unknown printer took a
+galley of type and scrambled it to make a type specimen book. It has
+survived not only five centuries, but also the leap into electronic
+typesetting, remaining essentially unchanged. It was popularised in the
+1960s with the release of Letraset sheets containing Lorem Ipsum
+passages, and more recently with desktop publishing software like Aldus
+PageMaker including versions of Lorem Ipsum.</p>
+<h3 id="lists">Lists <a name="Lists"></a></h3>
+<p>’*’ is useful to do lists in markdown. The following is a typical
+list done using <em>asterisk</em> symbol.</p>
+<ul>
+<li>first line</li>
+<li>second line</li>
+<li>third line</li>
+</ul>
+<h4 id="ordered-list">Ordered list <a name="Ordered list"></a></h4>
+<p>An ordered list is prefaced with numbers, instead of asterisks. Take
+a look at this recipe:</p>
+<ol type="1">
+<li>ordered list line one</li>
+<li>ordered list line two</li>
+<li>ordered list line three</li>
+</ol>
+<p>You can choose to add italics, bold, or links within lists, as you
+might expect. In the box below, turn the latin names for the plants into
+italics.</p>
+<ol type="1">
+<li>ordered list <strong>line one</strong></li>
+<li>ordered list <em>line two</em></li>
+<li>ordered list <strong><em>line three</em></strong></li>
+</ol>
+<h4 id="nested-lists-or-sub-lists">Nested lists (or sub-lists)
+<a name="Nested lists"></a></h4>
+<p>Occasionally, you might find the need to make a list with more depth,
+or, to nest one list within another. Have no fear, because the Markdown
+syntax is exactly the same. All you have to do is to remember to indent
+each asterisk one space more than the preceding item.</p>
+<ul>
+<li>this is line one in unordered list</li>
+<li>this line one indented by one space makes this line nested under
+line one.</li>
+<li>this is line two in unordered list</li>
+<li>this line one indented by one space makes this line nested under
+line two.</li>
+<li>this line two indented by one space makes this line nested under
+line two.</li>
+<li>this is line three in unordered list</li>
+<li>this line one indented by one space makes this line nested under
+line three.</li>
+<li>this line two indented by one space makes this line nested under
+line three.</li>
+<li>this line three indented by one space makes this line nested under
+line three.</li>
+</ul>
+<h4 id="mixed-lists">Mixed lists <a name="Mixed lists"></a></h4>
+<p>There’s one more trick to lists and indentation that we’ll explore,
+and that deals with the case of paragraphs. Suppose you want to create a
+bullet list that requires some additional context (but not another
+list).</p>
+<ol type="1">
+<li>Crack three eggs over a bowl.</li>
+</ol>
+<p>Now, you’re going to want to crack the eggs in such a way that you
+don’t make a mess.</p>
+<p>If you <em>do</em> make a mess, use a towel to clean it up!</p>
+<ol start="2" type="1">
+<li>Pour a gallon of milk into the bowl.</li>
+</ol>
+<p>Basically, take the same guidance as above: don’t be messy, but if
+you are, clean it up!</p>
+<ol start="3" type="1">
+<li><p>Rub the salmon vigorously with butter.</p>
+<p>By “vigorous,” we mean a strictly vertical motion. Julia Child once
+quipped: &gt; Up and down and all around, that’s how butter on salmon
+goes.</p></li>
+<li><p>Drop the salmon into the egg-milk bowl.</p>
+<p>Here are some techniques on salmon-dropping:</p>
+<ul>
+<li>Make sure no trout or children are present</li>
+<li>Use both hands</li>
+<li>Always have a towel nearby in case of messes</li>
+</ul></li>
+</ol>
+<h3 id="line-breaks">Line breaks <a name="Line breaks"></a></h3>
+<p>Following line will be rendered as sinle line</p>
+<p>“Do I contradict myself? Very well then I contradict myself, (I am
+large, I contain multitudes.)”</p>
+<p>We need to write as below to make line breaks.</p>
+<p>“Do I contradict myself?</p>
+<p>Very well then I contradict myself,</p>
+<p>(I am large, I contain multitudes.)”</p>
+<h3 id="tables">Tables <a name="Tables"></a></h3>
+<h4 id="table-1-a-sample-table"><strong>Table 1</strong>: <em>a sample
+table</em></h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">col 1</th>
+<th style="text-align: center;">col 2</th>
+<th style="text-align: right;">col 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">val 1</td>
+<td style="text-align: center;">val 2</td>
+<td style="text-align: right;"><a href="www.wikipedia.org">line</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">val 1</td>
+<td style="text-align: center;">val 2</td>
+<td style="text-align: right;"><strong>val 3</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">val 1</td>
+<td style="text-align: center;">val 2</td>
+<td style="text-align: right;"><em>val |</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="math-inside-rmarkdown">Math inside RMarkdown
+<a name="Math inside RMarkdown"></a></h3>
+<h4 id="symbols">Symbols</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Symbol</th>
+<th style="text-align: right;">Script</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span
+class="math inline"><em>α</em></span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span
+class="math inline"><em>A</em></span></td>
+<td style="text-align: right;">A</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span
+class="math inline"><em>β</em></span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span
+class="math inline"><em>B</em></span></td>
+<td style="text-align: right;">B</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span
+class="math inline"><em>γ</em></span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span
+class="math inline"><em>Γ</em></span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span
+class="math inline"><em>π</em></span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span
+class="math inline"><em>Π</em></span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span
+class="math inline"><em>ϕ</em></span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span
+class="math inline"><em>Φ</em></span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span
+class="math inline"><em>φ</em></span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span
+class="math inline"><em>θ</em></span></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<h4 id="power-and-indices">Power and Indices</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Symbol</th>
+<th style="text-align: right;">Script</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span
+class="math inline">$\frac{n!}{k!(n-k)!}$</span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span
+class="math inline">$\binom{n}{k}$</span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span
+class="math inline">$\frac{\frac{x}{1}}{x - y}$</span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span
+class="math inline"><sup>3</sup>/<sub>7</sub></span></td>
+<td style="text-align: right;">^3/_7</td>
+</tr>
+</tbody>
+</table>
+<h4 id="roots">Roots</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Symbol</th>
+<th style="text-align: right;">Script</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span
+class="math inline">$\sqrt{k}$</span></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span
+class="math inline">$\sqrt[n]{k}$</span></td>
+<td style="text-align: right;"></td>
+</tr>
+</tbody>
+</table>
+<p>Refer <a
+href="https://csrgxtu.github.io/2015/03/20/Writing-Mathematic-Fomulars-in-Markdown/">to
+this link</a> for rest of the material.</p>
+<h3 id="urls-and-email-addresses">URLs and Email Addresses
+<a name="URLs and Emails"></a></h3>
+<p>Angle brackets are used for URL. For instancd: go to <a
+href="https://pypi.org/project/pypandoc/"
+class="uri">https://pypi.org/project/pypandoc/</a> pypandoc
+documentation. <code>`&lt;fake@example.com&gt;`</code> creates an email
+just like <a href="mailto:fake@example.com"
+class="email">fake@example.com</a>.</p>
+<h3 id="code-blocks">Code Blocks <a name="Code Blocks"></a></h3>
+<p>To create code blocks, indent every line of the block by at least
+four spaces or one tab.</p>
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+&lt;/html&gt;</code></pre>
+<p>In the above code the fist line is indented by <em>4 spaces</em> or
+<em>one tab</em>. Code blocks are normally indented four spaces or one
+tab. When they’re in a list, indent them eight spaces or two tabs.</p>
+<ol type="1">
+<li><p>Open the file.</p></li>
+<li><p>Find the following code block on line 21:</p>
+<pre><code> &lt;html&gt;
+     &lt;head&gt;
+     &lt;title&gt;Test&lt;/title&gt;  
+ &lt;/head&gt;</code></pre></li>
+<li><p>Update the title to match the name of your website.</p></li>
+</ol>
+<h4 id="plain-code">Plain Code <a name="Plain Code"></a></h4>
+<p>To denote a word or phrase as code, enclose it in backticks (`). For
+instance:</p>
+<p>At the command prompt, type <code>nano</code>.</p>
+<h4 id="escaping-backticks">Escaping Backticks</h4>
+<p>If the word or phrase you want to denote as code includes one or more
+backticks, you can escape it by enclosing the word or phrase in double
+backticks (``).</p>
+<p><code>Use `code` in your Markdown file.</code></p>
+<h3 id="horizontal-rules">Horizontal Rules
+<a name="Horizontal Rules"></a></h3>
+<p>To create a horizontal rule, use three or more asterisks (***),
+dashes (—), or underscores (___) on a line by themselves.</p>
+<p>Try to put a blank line before…</p>
+<hr />
+<p>…and after a horizontal rule.</p>
+<h3 id="formatting-links">Formatting Links
+<a name="Formatting Links"></a></h3>
+<p>To emphasize links, add asterisks before and after the brackets and
+parentheses. To denote links as code, add backticks in the brackets.</p>
+<pre><code>I love supporting the **[EFF](https://eff.org)**.
+This is the *[Markdown Guide](https://www.markdownguide.org)*.
+See the section on [`code`](#code).</code></pre>
+<p>The rendered output looks like this:</p>
+<p>I love supporting the <strong><a
+href="https://eff.org">EFF</a></strong>. This is the <em><a
+href="https://www.markdownguide.org">Markdown Guide</a></em>. See the
+section on <a href="#code"><code>code</code></a>.</p>
+<h3 id="html-code-in-markdown">HTML code in markdown
+<a name="HTML code in markdown"></a></h3>
+<p>Many Markdown applications allow you to use HTML tags in
+Markdown-formatted text. This is helpful if you prefer certain HTML tags
+to Markdown syntax. For example, some people find it easier to use HTML
+tags for images. Using HTML is also helpful when you need to change the
+attributes of an element, like specifying the color of text or changing
+the width of an image.</p>
+<p>To use HTML, place the tags in the text of your Markdown-formatted
+file.</p>
+<pre><code>This **word** is bold. This &lt;em&gt;word&lt;/em&gt; is italic.
+The rendered output looks like this:</code></pre>
+<p>This <strong>word</strong> is bold. Also
+<code>&lt;em&gt;italic&lt;em&gt;</code> can be done to make itelicised
+words.</p>
+<h3 id="text-alignment">Text alignment
+<a name="Text alignment"></a></h3>
+<p>We can do
+<code>&lt;center&gt; &lt;h1&gt;heading 1&lt;/h1&gt; &lt;/center&gt;</code>
+for aligning text. This statement produces</p>
+<pre><code>`&lt;center&gt; &lt;h1&gt;heading 1&lt;/h1&gt; &lt;/center&gt;`</code></pre>
+<p>It is rather easy to align text using HTML code. For instace</p>
+<p>Code
+<code>&lt;div style="text-align: center;"&gt;     ![alt text](https://avatars.githubusercontent.com/u/37700934?s=400&amp;u=6e0c4738edf8996e2d4ca7b0f1f66f8b2f557c96&amp;v=4)     &lt;/div&gt;</code></p>
+<p>Result</p>
+<div style="text-align: center;">
+<figure>
+<img
+src="https://avatars.githubusercontent.com/u/37700934?s=150&amp;u=6e0c4738edf8996e2d4ca7b0f1f66f8b2f557c96&amp;v=4"
+alt="alt text" />
+<figcaption aria-hidden="true">alt text</figcaption>
+</figure>
+</div>
+<p>or we can also do as below</p>
+<pre><code>`&lt;img style=&quot;display: block; margin-left: auto; margin-right: auto; width: 30%;&quot;
+    src=&quot;https://markdown.land/wp-content/uploads/2021/06/markdown-512px.png&quot; 
+    alt=&quot;Our logo&quot;&gt;
+&lt;/img&gt;`</code></pre>
+<p>this will produce</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto; width: 30%;"
+    src="https://markdown.land/wp-content/uploads/2021/06/markdown-512px.png" 
+    alt="Our logo"> </img></p>
+<h4 id="title-centering">Title centering</h4>
+<p>We can use <code>&lt;h1&gt;&lt;/h1&gt;</code> or
+<code>&lt;center&gt;&lt;/center&gt;</code> tags for centering titles.
+For instance</p>
+<pre><code>`&lt;h1 style=&quot;text-align: center;&quot;&gt;Test&lt;/h1&gt;
+&lt;center&gt;Test&lt;/center&gt;`</code></pre>
+<p>this will produce below centered line</p>
+<h1 style="text-align: center;">
+Centered text with h1 tag
+</h1>
+<center>
+Centered text with <code>cetnter</code> tag
+</center>
+<h3 id="references">References</h3>
+<p>[3] Visit <a href="https://www.markdownguide.org/"
+class="uri">https://www.markdownguide.org/</a> for full documentation on
+markdown.</p>
+<p>[4] Refer to <a href="https://www.markdownguide.org/basic-syntax/"
+class="uri">https://www.markdownguide.org/basic-syntax/</a> for markdown
+documentation.</p>
+<p>[5] Visit <a href="https://pandoc.org/"
+class="uri">https://pandoc.org/</a> for <code>pandoc</code> home.</p>
+<p>[6] Refer to <a href="https://pypi.org/project/pypandoc/"
+class="uri">https://pypi.org/project/pypandoc/</a> for
+<code>pypandoc</code> documentation.</p>
+<p>[7] Refer to <a
+href="https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents"
+class="uri">https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents</a>
+for information on craeting table of contents.</p>
+<p>[8] Refer to <a href="https://markdown.land/markdown-center"
+class="uri">https://markdown.land/markdown-center</a> for making
+alignments in the document.</p>

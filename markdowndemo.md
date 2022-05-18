@@ -341,3 +341,5 @@ this will produce below centered line
 [7] Refer to <https://stackoverflow.com/questions/11948245/markdown-to-create-pages-and-table-of-contents> for information on craeting table of contents. 
 
 [8] Refer to <https://markdown.land/markdown-center> for making alignments in the document. 
+
+[9] Visit <https://www.markdownguide.org/extended-syntax/#:~:text=To%20create%20a%20footnote%20reference,output%2C%20footnotes%20are%20numbered%20sequentially.> for few useful tips. 
