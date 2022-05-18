@@ -1,6 +1,199 @@
-<h1 id="this-is-heading-one">This is heading one</h1>
-<h2 id="this-is-subheading-heading-two">This is subheading/ heading
-two</h2>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>markdowndemo</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="table-of-contents">Table of contents</h1>
+<ol type="1">
+<li><a href="#Title">Title</a></li>
+<li><a href="#External%20links">External links</a></li>
+<li><a href="#Images">Images</a></li>
+<li><a href="#Quotes">Quotes</a></li>
+<li><a href="#Lists">Lists</a>
+<ol type="1">
+<li><a href="#Ordered%20list">Ordered list</a></li>
+<li><a href="#Nested%20lists">Nested lists</a></li>
+<li><a href="#Mixed%20lists">Mixed lists</a></li>
+</ol></li>
+<li><a href="#Line%20breaks">Line breaks</a></li>
+<li><a href="#Tables">Tables</a></li>
+<li><a href="#Math%20inside%20RMarkdown">Math inside RMarkdown</a></li>
+<li><a href="#URLs%20and%20Emails">URLs and Emails</a></li>
+<li><a href="#Code%20Blocks">Code Blocks</a>
+<ol type="1">
+<li><a href="#Plain%20Code">Plain Code</a></li>
+</ol></li>
+<li><a href="#Horizontal%20Rules">Horizontal Rules</a></li>
+<li><a href="#Formatting%20Links">Formatting Links</a></li>
+<li><a href="#HTML%20code%20in%20markdown">HTML code in
+markdown</a></li>
+</ol>
+<h2 id="this-is-title-level-2">This is Title (level 2)
+<a name="Title"></a></h2>
+<p>Titles are created either using <code>#</code>. For instace at level
+1 it can be <code>#</code>, level 2 <code>##</code> and so on…
+<code>##</code> make the sub-title just as below.</p>
+<pre><code>## This is subheading/ heading two (at level 3) </code></pre>
+<blockquote>
+<h2 id="this-is-subheading-heading-two-at-level-3">This is subheading/
+heading two (at level 3)</h2>
+</blockquote>
 <p><strong><em>Lorem Ipsum</em></strong> is simply dummy text of the
 printing and typesetting industry. Lorem Ipsum has been the industry’s
 standard dummy text ever since the 1500s, when an unknown printer took a
@@ -10,23 +203,22 @@ typesetting, remaining essentially unchanged. It was popularised in the
 1960s with the release of Letraset sheets containing Lorem Ipsum
 passages, and more recently with desktop publishing software like Aldus
 PageMaker including versions of Lorem Ipsum.</p>
-<h3 id="external-links">External links</h3>
+<h3 id="external-links">External links
+<a name="External links"></a></h3>
 <p><a href="www.wikipedia.org">Visit wikipedia</a> This is a link that
 redirects to Wikipedia.</p>
-<h3 id="internal-links">Internal links</h3>
+<h3 id="internal-links">Internal links <a name="Inernal links"></a></h3>
 <p>This statement shows as how to provide a <a
 href="this%20links/cites%20to%201%20in%20the%20text">reference link</a>
 and a reference to <a href="www.wikipedia.org">external url</a>.</p>
-<h3 id="images">images</h3>
-<h3 id="table-1"><strong>Table 1</strong></h3>
-<h3 id="images-1">images</h3>
+<h3 id="images">images <a name="Images"></a></h3>
 <p>The below url spots to wikipedia logo <img
 src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png"
 alt="Wikipedia" /></p>
 <p>This is reference image link. This links to <a
 href="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png">wikipedia</a>
 image.</p>
-<h3 id="quotes">Quotes</h3>
+<h3 id="quotes">Quotes <a name="Quotes"></a></h3>
 <p>The following is a single line quote</p>
 <blockquote>
 <p>this is a quote</p>
@@ -61,7 +253,7 @@ typesetting, remaining essentially unchanged. It was popularised in the
 1960s with the release of Letraset sheets containing Lorem Ipsum
 passages, and more recently with desktop publishing software like Aldus
 PageMaker including versions of Lorem Ipsum.</p>
-<h3 id="lists">Lists</h3>
+<h3 id="lists">Lists <a name="Lists"></a></h3>
 <p>’*’ is useful to do lists in markdown. The following is a typical
 list done using <em>asterisk</em> symbol.</p>
 <ul>
@@ -69,7 +261,7 @@ list done using <em>asterisk</em> symbol.</p>
 <li>second line</li>
 <li>third line</li>
 </ul>
-<h4 id="ordered-list">ordered list</h4>
+<h4 id="ordered-list">Ordered list <a name="Ordered list"></a></h4>
 <p>An ordered list is prefaced with numbers, instead of asterisks. Take
 a look at this recipe:</p>
 <ol type="1">
@@ -85,7 +277,8 @@ italics.</p>
 <li>ordered list <em>line two</em></li>
 <li>ordered list <strong><em>line three</em></strong></li>
 </ol>
-<h4 id="nested-lists-or-sub-lists">Nested lists (or sub-lists)</h4>
+<h4 id="nested-lists-or-sub-lists">Nested lists (or sub-lists)
+<a name="Nested lists"></a></h4>
 <p>Occasionally, you might find the need to make a list with more depth,
 or, to nest one list within another. Have no fear, because the Markdown
 syntax is exactly the same. All you have to do is to remember to indent
@@ -107,7 +300,7 @@ line three.</li>
 <li>this line three indented by one space makes this line nested under
 line three.</li>
 </ul>
-<h3 id="mixed-lists-both-ore">Mixed lists (both ore</h3>
+<h4 id="mixed-lists">Mixed lists <a name="Mixed lists"></a></h4>
 <p>There’s one more trick to lists and indentation that we’ll explore,
 and that deals with the case of paragraphs. Suppose you want to create a
 bullet list that requires some additional context (but not another
@@ -136,7 +329,7 @@ goes.</p></li>
 <li>Always have a towel nearby in case of messes</li>
 </ul></li>
 </ol>
-<h3 id="line-breaks">Line breaks</h3>
+<h3 id="line-breaks">Line breaks <a name="Line breaks"></a></h3>
 <p>Following line will be rendered as sinle line</p>
 <p>“Do I contradict myself? Very well then I contradict myself, (I am
 large, I contain multitudes.)”</p>
@@ -144,8 +337,9 @@ large, I contain multitudes.)”</p>
 <p>“Do I contradict myself?</p>
 <p>Very well then I contradict myself,</p>
 <p>(I am large, I contain multitudes.)”</p>
-<h3 id="table-1-a-sample-table"><strong>Table 1</strong>: <em>a sample
-table</em></h3>
+<h3 id="tables">Tables <a name="Tables"></a></h3>
+<h4 id="table-1-a-sample-table"><strong>Table 1</strong>: <em>a sample
+table</em></h4>
 <table>
 <thead>
 <tr class="header">
@@ -172,7 +366,8 @@ table</em></h3>
 </tr>
 </tbody>
 </table>
-<h3 id="math-inside-rmarkdown">Math inside RMarkdown</h3>
+<h3 id="math-inside-rmarkdown">Math inside RMarkdown
+<a name="Math inside RMarkdown"></a></h3>
 <h4 id="symbols">Symbols</h4>
 <table>
 <thead>
@@ -299,14 +494,15 @@ class="math inline">$\sqrt[n]{k}$</span></td>
 <p>Refer <a
 href="https://csrgxtu.github.io/2015/03/20/Writing-Mathematic-Fomulars-in-Markdown/">to
 this link</a> for rest of the material.</p>
-<h3 id="urls-and-email-addresses">URLs and Email Addresses</h3>
+<h3 id="urls-and-email-addresses">URLs and Email Addresses
+<a name="URLs and Emails"></a></h3>
 <p>Angle brackets are used for URL. For instancd: go to <a
 href="https://pypi.org/project/pypandoc/"
 class="uri">https://pypi.org/project/pypandoc/</a> pypandoc
 documentation. <code>`&lt;fake@example.com&gt;`</code> creates an email
 just like <a href="mailto:fake@example.com"
 class="email">fake@example.com</a>.</p>
-<h3 id="code-blocks">Code Blocks</h3>
+<h3 id="code-blocks">Code Blocks <a name="Code Blocks"></a></h3>
 <p>To create code blocks, indent every line of the block by at least
 four spaces or one tab.</p>
 <pre><code>&lt;html&gt;
@@ -325,7 +521,7 @@ tab. When they’re in a list, indent them eight spaces or two tabs.</p>
  &lt;/head&gt;</code></pre></li>
 <li><p>Update the title to match the name of your website.</p></li>
 </ol>
-<h4 id="code">Code</h4>
+<h4 id="plain-code">Plain Code <a name="Plain Code"></a></h4>
 <p>To denote a word or phrase as code, enclose it in backticks (`). For
 instance:</p>
 <p>At the command prompt, type <code>nano</code>.</p>
@@ -334,13 +530,15 @@ instance:</p>
 backticks, you can escape it by enclosing the word or phrase in double
 backticks (``).</p>
 <p><code>Use `code` in your Markdown file.</code></p>
-<h3 id="horizontal-rules">Horizontal Rules</h3>
+<h3 id="horizontal-rules">Horizontal Rules
+<a name="Horizontal Rules"></a></h3>
 <p>To create a horizontal rule, use three or more asterisks (***),
 dashes (—), or underscores (___) on a line by themselves.</p>
 <p>Try to put a blank line before…</p>
 <hr />
 <p>…and after a horizontal rule.</p>
-<h3 id="formatting-links">Formatting Links</h3>
+<h3 id="formatting-links">Formatting Links
+<a name="Formatting Links"></a></h3>
 <p>To emphasize links, add asterisks before and after the brackets and
 parentheses. To denote links as code, add backticks in the brackets.</p>
 <pre><code>I love supporting the **[EFF](https://eff.org)**.
@@ -351,7 +549,8 @@ See the section on [`code`](#code).</code></pre>
 href="https://eff.org">EFF</a></strong>. This is the <em><a
 href="https://www.markdownguide.org">Markdown Guide</a></em>. See the
 section on <a href="#code"><code>code</code></a>.</p>
-<h3 id="html">HTML</h3>
+<h3 id="html-code-in-markdown">HTML code in markdown
+<a name="HTML code in markdown"></a></h3>
 <p>Many Markdown applications allow you to use HTML tags in
 Markdown-formatted text. This is helpful if you prefer certain HTML tags
 to Markdown syntax. For example, some people find it easier to use HTML
@@ -367,3 +566,5 @@ The rendered output looks like this:</code></pre>
 <p>Refere to <a href="https://www.markdownguide.org/basic-syntax/"
 class="uri">https://www.markdownguide.org/basic-syntax/</a> for more
 inforamtion</p>
+</body>
+</html>
